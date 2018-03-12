@@ -1,0 +1,132 @@
+.top_navbar 
+{
+    overflow: hidden;
+    background-color: #039be5;
+}
+.top_navbar a 
+{
+    float: left;
+    display:block;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.top_navbar a:active
+{
+    background-color: white;
+    color: #039be5;
+}
+.top_navbar .icon
+{
+  display: none;
+}
+@media screen and (max-width: 800px) 
+{
+    .top_navbar a:not(:first-child) {display: none;}
+    .top_navbar a.icon 
+    {
+        float: right;
+        display: block;
+    }
+    .top_navbar.responsive {position: relative;}
+    .top_navbar.responsive .icon 
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .top_navbar.responsive a 
+    {
+        float: none;
+        display: block;
+        text-align: left;
+    } 
+}
+.dropdown 
+{
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn 
+{
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    z-index: 3;
+}
+
+.top_navbar a:hover, .dropdown:hover .dropbtn 
+{
+    background-color: white;
+    color: #039be5;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    right: 40px;
+    text-align: center;
+    z-index: 3;
+}
+@media (max-width: 800px)
+{
+    .dropdown:hover .dropdown-content 
+    {
+        display: inline;
+    } 
+}
+@media (max-width: 500px)
+{
+    .dropdown-content
+    {
+        right: 0px;
+    } 
+}
+.dropdown-content a 
+{
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: #039be5;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: inline;
+}
+body
+{
+    background-color: lightgrey;
+}
+.body-container
+{
+    padding: 30px;
+}
+.body-border
+{
+    padding: 10px;
+    box-shadow: 0 4px 8px 4px rgba(179,229,252, 0.9);
+    background-color: white;
+}
+.currentuser
+{
+    text-align: right;
+    width: 100%;
+}

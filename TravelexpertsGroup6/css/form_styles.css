@@ -1,0 +1,268 @@
+/*Author: Kennard*/
+
+/* this sections styles the login link and page*/
+.login-container > h1, .profile-container > h1
+{
+    text-align: center;
+    color: white;
+    letter-spacing: 6px;
+}
+#login-body, #profile-body
+{
+    text-align: center;
+}
+.login-container, .profile-container
+{
+    background-color: #1a3749;
+    border-radius: 5px;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 30%;
+    height: 100%;
+    content: "";
+    display: inline-block;
+    clear: both;  
+    box-shadow: 0 4px 8px 4px rgba(3,155,229, 0.2);
+}
+.login-container > button
+{
+    text-align: left;
+}
+.login-inputs
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.profile-container
+{
+    width: 60%;
+    padding: 12px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+ .loginBtn
+{
+    background-color: #039be5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+button:hover
+{
+    opacity: 0.8;
+}
+.loginBtn span 
+{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.loginBtn span:after 
+{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.loginBtn:hover span 
+{
+    padding-right: 25px;
+}
+
+.loginBtn:hover span:after 
+{
+    opacity: 1;
+    right: 0;
+}
+.profile-img-container 
+{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.profile-img
+{
+    width: 30%;
+    border-radius: 50%;
+}
+.cancel-container 
+{
+    padding: 16px;
+    text-align: right;
+    background-color: #f1f1f1;
+}
+span.forgot > a
+{
+    text-decoration: none;
+}
+#firstname, #lastname, #homephone, #busphone
+{
+    width: 49%;
+}
+#myprov, #mycity, #mypostal, #mycountry
+{
+    width: 49%;
+}
+@media (max-width: 700px) 
+{
+    .booking-col
+    {
+        width: 100%;
+        position: absolute;
+    }
+    .profile-container
+    {
+        width: 100%;
+    }
+    .profile-inputs
+    {
+        width: 100%;
+        display: block;
+    }   
+    #firstname, #lastname, #homephone, #busphone, #myprov, #mycity, #mypostal, #mycountry
+    {
+        width: 49%;
+    }
+    .continue_button, .reset_button, .back_button
+    {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .login-container
+    {
+        width: 70%;
+    }
+}
+.package-img
+{
+    position: relative;
+    display: block;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+.bookingBtns::after 
+{
+    content: "";
+    clear: both;
+    display: block;
+}
+@media (max-width: 400px)
+{
+    #firstname, #lastname, #homephone, #busphone, #myprov, #mycity, #mypostal, #mycountry
+    {
+        width: 48%;
+    }
+}
+.bookingcontainer
+{
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    position: relative;
+    margin-bottom: 300px;
+}
+.booking-col
+{
+    width: 50%; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+input[type=number],input[type=text],input[type=password], select, input[type=date]
+{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#new_card_div 
+{
+    display: block;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.continue_button
+{
+    background-color: #039be5;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+.reset_button, .back_button
+{
+    background-color: #10222d;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+.reset_button:hover, .back_button:hover
+{
+    background-color: #039be5;
+    color: white;
+}
+.updateBtn 
+{
+    background-color: #10222d;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+.updateBtn:hover
+{
+    background-color: #039be5;
+}
+.updateBtn span 
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.updateBtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.updateBtn:hover span {
+  padding-right: 25px;
+}
+
+.updateBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}

@@ -1,0 +1,333 @@
+/* Contact page styles 
+Author: Cecilia(Wenxi) Zhang 
+Course: CPRG210
+*/
+/*set maintitle position in tablecell*/
+.maintext
+{
+  padding-left: 15%;
+}
+
+/*set socialmedia position in tablecell */
+.socialmedia{
+  padding-left: 15%;
+  padding-bottom: 5%;
+}
+/*set senior agents column position in tablecell */
+.sagents{
+  padding-left: 15%;
+}
+/*set map position in table cell*/
+.locations{
+  padding-left: 15%;
+}
+
+.googlemap{
+  position: relative;
+  padding-left: 15%;
+  margin-bottom: 5%;
+  margin-right: 10%;
+}
+
+#map_div{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 40%;
+    padding-top: 80px;
+    position: relative;
+}
+/* Style icons for social media links*/
+.fa {
+    padding: 1%;
+    font-size: 1em;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* GooglePlus */
+.fa-google {
+    background: #2d862d;
+    color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+    background: #cc0000;
+    color: white;
+}
+
+#agents>h2,h3{
+  margin-top: 0;
+}
+#agents{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-left: 30px solid #039be5;
+  border-right: 30px solid #039be5;
+}
+/* Cards for agent profile*/
+.card {
+    position: relative;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    background:#1a3749;
+    color: lightblue;
+
+}
+
+/* On mouse-over, add a deeper shadow, show the middle part*/
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover .image {
+  opacity: 0.3;
+}
+
+.card:hover .middle {
+  opacity: 1;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 260px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  position: absolute;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  text-align: center;  
+  top:30%;
+  background-color: white;
+  color: black;
+  font-size: 70%;
+  padding-top: 20px;
+  z-index:1;
+}
+
+.text {
+  background-color: #039be5;
+  color: white;
+  font-size: 16px;
+  padding: 8px 32px;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+/* Add some padding inside the card container */
+.container {
+    width: 100%;
+    position: relative;
+    padding: 2px 16px;
+    height: 100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.col-container {
+/*    margin-top: 5%;*/
+    padding-top:80px;
+    padding-bottom: 80px; 
+    display: table;
+    width: 100%;
+    border-left: 30px solid #039be5;
+    border-right: 30px solid #039be5;
+}
+
+.locations h3{
+  padding-left: 0;
+  padding-top: 20px;
+  margin-left: 0;
+  font-size: 130%;
+}
+
+.agentlist{
+    display: table;
+    margin-left: 7.5%;
+    margin-bottom: 30px;
+    width: 85%;
+}
+.acol {
+    float: left;
+    width: 25%;
+}
+.halfcol{
+    display: table-cell;
+    width: 50%;
+}
+/*parallax scrolling effect*/
+.parallax1 {
+    /* The image used */
+    background-image: url('../media/bgs/contact1.jpg');
+
+    /* Full height */
+/*    height: 70%; */
+    height: 620px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1>label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4em;
+    background: rgba(255,255,255, 0.3);
+    width: 50%;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('../media/bgs/contact1.jpg');
+
+/*    height: 50%; */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url('../media/bgs/contact3.jpg');
+
+    /* Full height */
+/*    height: 50%; */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4{
+    /* The image used */
+    background-image: url('../media/bgs/contact3.jpg');
+
+    /* Full height */
+/*    height: 30%; */
+    height: 200px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Style the quick jump navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #039be5;
+  position: fixed;
+  z-index:2;
+}
+
+#navbar a {
+/*  float: left;*/
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding:1px;
+  text-decoration: none;
+  font-size: 80%;
+}
+#navbar h3{
+  text-align: center;
+  font-size: 95%;
+  padding: 0 0.1em;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  bottom: 1em;
+  width: 6%;
+}
+
+/* Responsive page*/
+@media only screen and (max-width: 1024px) {
+    .parallax1 .parallax2 .parallax3{
+        background-attachment: scroll;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .acol { 
+        display: block;
+        width: 100%;
+    }
+    .halfcol{
+        display: block;
+        width: 100%;
+    }
+    .fa { 
+        width: 10%;
+    }
+    .parallax1>label{
+      font-size: 2.5em;
+        width: 100%
+    }
+}
+@media (max-width: 700px)
+{
+    .acol { 
+        display: block;
+        width: 100%;
+    }
+    .sticky
+    {
+        width: 11%;
+    }
+    .parallax1>label{
+      font-size: 2.5em;
+        width: 80%
+    }
+}
